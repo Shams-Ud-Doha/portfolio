@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shams Ud Doha | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Shams Ud Doha</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="theme-toggle">dark</button></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a DevOps Engineer with a strong passion for automation, cloud computing, and security. With a deep understanding of CI/CD pipelines, infrastructure as code (IaC), and cloud platforms like AWS, Azure, and Google Cloud, I thrive on optimizing workflows and enhancing system reliability.</p>
+    </section>
+    
+    <section id="skills">
+        <h2>Skills & Tech Stack</h2>
+        <div class="skills-grid">
+            <img src="assets/docker.svg" alt="Docker">
+            <img src="assets/kubernetes.svg" alt="Kubernetes">
+            <img src="assets/aws.svg" alt="AWS">
+            <img src="assets/linux.svg" alt="Linux">
+        </div>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project">
+                <img src="assets/project1.png" alt="Project 1">
+                <h3>Project Title</h3>
+                <p>Brief description of the project.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:shamsuddohamiazy@gmail.com">shamsuddohamiazy@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/Shams-Ud-Doha">github.com/Shams-Ud-Doha</a></p>
+    </section>
+    
+    <script>
+        // Theme Toggle Functionality
+        const themeToggle = document.getElementById("theme-toggle");
+        themeToggle.addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+            themeToggle.textContent = document.body.classList.contains("dark-mode") ? ":sunny:" : ":crescent_moon:";
+        });
+    </script>
+</body>
+</html>
